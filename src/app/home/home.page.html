@@ -1,20 +1,37 @@
 <ion-app>
-  <ion-header>
-    <ion-toolbar>
-      <ion-title> Lua de Sangue </ion-title>
-      <ion-fab>
-        <ion-fab-button>
-          <ion-icon name="add"></ion-icon>
-        </ion-fab-button>
-      </ion-fab>
-    </ion-toolbar>
+  <ion-menu contentId="main-content">
+    <ion-content class="ion-padding">
+      <ion-item>
+        <ion-select label="Fixed label" label-placement="fixed" placeholder="Tipo de Navegação">
+          <ion-select-option value="apple">Anonima</ion-select-option>
+          <ion-select-option value="banana">Login</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
   </ion-header>
   <ion-content [fullscreen]="true" class="ion-padding">
-    <h1>Lua de Sangue: Um rpg de interpretação e emoção</h1>
+    <ion-card>
+      <link alt="a" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fguiame.com.br%2Fgospel%2Fnoticias%2Fconsiderada-um-sinal-profetico-ultima-lua-de-sangue-esta-marcada-para-acontecer-no-dia-27-de-setembro.html&psig=AOvVaw1DzI4h2iSm8nqZe_uJv5px&ust=1746636096442000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLC3iNOkj40DFQAAAAAdAAAAABAE">
+      <ion-card-header>
+        <ion-card-title>Lua de Sangue</ion-card-title>
+        <ion-card-subtitle>Um rpg de interpretação e emoção</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Boas Vindas ao site oficial do rpg Lua de Sangue
 
-    <link rel="stylesheet" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fguiame.com.br%2Fgospel%2Fnoticias%2Fconsiderada-um-sinal-profetico-ultima-lua-de-sangue-esta-marcada-para-acontecer-no-dia-27-de-setembro.html&psig=AOvVaw1DzI4h2iSm8nqZe_uJv5px&ust=1746636096442000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLC3iNOkj40DFQAAAAAdAAAAABAE">
+      </ion-card-content>
+    </ion-card>
   
-
     <p>
       A Cultivação é algo muito presente em todo universo, onde o indivíduo busca aprimorar o corpo e alma para tornar seu Núcleo mais forte contra espíritos, alcançar poder extraordinário, longevidade ou até a imortalidade dependendo de seu nível. Existem diferentes tipos de cultivação, e a principal delas envolve o uso de energia espiritual (ou qi) para aprimorar as habilidades. A cultivação pode ser feita por meio de diferentes caminhos e filosofias.
     </p>
@@ -60,3 +77,4 @@
       <ion-title> Todos os créditos preservados </ion-title>
     </ion-toolbar>
   </ion-footer>
+</ion-app>
